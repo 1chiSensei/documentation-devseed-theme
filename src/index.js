@@ -81,7 +81,7 @@ module.exports = function(
         if (config.hljs && config.hljs.highlightAuto) {
           return hljs.highlightAuto(example).value;
         }
-        return hljs.highlight('js', example).value;
+        return hljs.highlight(example).value;
       }
     }
   };
