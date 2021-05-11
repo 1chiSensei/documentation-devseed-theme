@@ -79,9 +79,9 @@ module.exports = function(
       autolink: formatters.autolink,
       highlight(example) {
         if (config.hljs && config.hljs.highlightAuto) {
-          return hljs.highlightAuto(example).value;
+          return hljs.highlight(example, { language: 'js' }).value;
         }
-        return hljs.highlight(example).value;
+        return hljs.highlight(example, { language: 'js' }).value;
       }
     }
   };
